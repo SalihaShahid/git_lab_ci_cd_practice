@@ -5,18 +5,7 @@ jobs:
     - image: circleci/node:14
 
   steps:
-      -checkout
-      -run:
+      - checkout
+      - run:
           name: add yarn install
           command: yarn install
-
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - main
