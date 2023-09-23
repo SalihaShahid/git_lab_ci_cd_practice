@@ -1,0 +1,11 @@
+version: 2
+
+jobs:
+  build:
+    - image: circleci/node:14
+
+  steps:
+      -checkout
+      -run:
+        name: add yarn install
+        command: yarn install
