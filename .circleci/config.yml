@@ -7,5 +7,5 @@ jobs:
   steps:
       -checkout
       -run:
-        name: add yarn install
-        command: yarn install
+          name: add yarn install
+          command: yarn install
